@@ -1,0 +1,50 @@
+1]Configure the Blynk App:
+	1. Download the Blynk App from Google play store or App store.
+
+	2. Create a new project in the Blynk app. Enter the project name and choose the 	device. In this IoT project, I have used NodeMCU, so I have selected NodeMCU.
+
+	3. After that Blynk will send an Auth Token to the registered email id. The Auth Token 	will be required while programming the ESP8266.
+
+2]Adding widgets in Blynk App
+	
+	Steps to add the button in Blynk App:
+	Open the project in the Blynk App Click on the “+” icon on the top.
+	elect the Button.
+	Click on that button and select the output pin –> V1 & Mode –> Switch
+
+	**Here I have used an active low Relay module, so to turn ON the relay we have to send 	“0” and “1” to turn OFF the relay.
+
+	In a similar way create switches with V2, V3, V4 pins to control the second, third & 
+	fourth relays
+
+3]Program NodeMCU with Arduino IDE
+	For this IoT based home automation project, I have used the Arduino IDE to program 	NodeMCU.
+
+	First update the Preferences –> Aditional boards Manager URLs: 	https://dl.espressif.com/dl/package_esp32_index.json, 	http://arduino.esp8266.com/stable/package_esp8266com_index.json
+	Then install the ESP8266 board from the Board manager 
+	After that install the Blynk library
+
+	Enter the following WiFi credential and Authentication token in the code:
+
+	WiFi Name at “WiFi Name”
+	WiFi Password at “WiFi Password”
+	Auth Token sent by Blynk at “AUTH TOKEN“
+	Then Goto Tools and select the board as “NodeMCU 1.0 ESP-12E” and the proper PORT 	in Arduino IDE.
+
+	Then click on the upload button to program the NodeMCU board.
+	After uploading the code, the blue LED connected with pin D0 should turn on as 	shown in the picture.
+
+	If the wifi is not available, the blue LED will turn off. Then you can control the 	relay module with push buttons.
+
+	If the internet comes back the NodeMCU will automatically connect with the WiFi and 	the blue LED will turn on.
+4]Connect Home Appliances with Relay:-
+	Now, connect 4 home appliances with relay module as per the above circuit.
+	Please take proper safety precaution while working with high voltage.
+
+NodeMCU ESP8266 Home Automation System is now ready.
+
+Now, you can easily control the home appliances from the smartphone using Blynk App. And you can also monitor the real-time status of switches in the Blynk app.
+
+You can also control the home appliances manually from the push buttons. even if there is no internet sill you can use the push buttons to control the home appliances.
+I hope you like this Smart house IoT projects idea with the ESP8266 and Blynk app.
+
