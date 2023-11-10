@@ -1,0 +1,13 @@
+The project proposes an efficient implementation for IoT (Internet of Things) used for monitoring and controlling the home
+appliances via World Wide Web. Home automation system uses the portable devices like smartphone, laptop, etc. as a user interface.
+They can communicate with home automation network through an Internet gateway, by means of low power communication
+protocols like ZigBee, Wi-Fi etc. This project aims at controlling home appliances via mobile app using Wi-Fi as communication
+protocol and node MCU as server system.
+NodeMCU is an open source IoT platform. The user here will move directly with the system through a web-based interface over
+the web, whereas home appliances like lights, fan, etc. are remotely controlled through easy interface provided by a
+website/application. The server will be interfaced with relay hardware circuits that control the appliances running at home. The
+server communicates with the corresponding relays
+The system is installed on a mobile or other networked device, and the user can create time schedules for certain changes to take
+effect. Smart home appliances come with self-learning skills so they can learn the homeowner’s schedules and make adjustments
+as needed. Smart homes enabled with lighting control allow homeowners to reduce electricity use and benefit from energy-related
+cost savings.
